@@ -10,3 +10,6 @@
 
 ### Запуск:
 `docker run -it task_4`
+
+С монтированием тома:
+`-v <path_to_directory_on_host>:<path_inside_container>`
