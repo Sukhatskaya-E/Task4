@@ -6,7 +6,7 @@
 - picard v.3.1.1
 
 ### Сборка:
-`docker build --no-cache -t task_4`
+`docker build --no-cache -t task_4 <dockerfile_path>`
 
 ### Запуск:
 `docker run -it task_4`
