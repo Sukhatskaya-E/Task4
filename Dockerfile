@@ -47,7 +47,7 @@ RUN wget https://github.com/samtools/samtools/releases/latest/download/samtools-
 # Picard version 3.1.1, release date: Nov 15, 2023
 RUN mkdir -p ${TOOLS}/picard-3.1.1/ \
 	&& wget https://github.com/broadinstitute/picard/releases/latest/download/picard.jar -O ${TOOLS}/picard-3.1.1/picard.jar \
-	&& chmod 777 ${TOOLS}/picard-3.1.1/picard.jar
+	&& chmod 555 ${TOOLS}/picard-3.1.1/picard.jar
 
 
 ENV PATH="${TOOLS}/bwa-mem2-2.2.1:${TOOLS}/samtools-1.20:${TOOLS}/picard-3.1.1:${TOOLS}/venv/bin:${PATH}"
